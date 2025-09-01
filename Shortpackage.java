@@ -1,4 +1,4 @@
-package com.soumen;
+package com.myjava;
 
 public class Shortpackage{
     public static void bubble(int[] arr){

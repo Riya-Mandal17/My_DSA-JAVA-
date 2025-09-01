@@ -1,4 +1,4 @@
-import com.soumen.MatrixOperation;
+import com.myjava.MatrixOperation;
 import java.util.Scanner;
 
 class Matrix{

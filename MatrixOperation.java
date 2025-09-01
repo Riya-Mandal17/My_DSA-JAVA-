@@ -1,4 +1,4 @@
-package com.soumen;
+package com.myjava;
 
 public class MatrixOperation{
      public static boolean findElement(int[][] arr,int key){

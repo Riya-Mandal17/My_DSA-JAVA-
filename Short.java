@@ -1,4 +1,4 @@
-import com.soumen.Shortpackage;
+import com.java.Shortpackage;
 import java.util.Scanner;
 
 class Short{

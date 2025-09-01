@@ -1,4 +1,4 @@
-import com.soumen.BinarySearch;
+import com.myjava.BinarySearch;
 import java.util.Scanner;
 
 class ArrayModule{

@@ -1,4 +1,4 @@
-package com.soumen;
+package com.myjava;
 
 public class BinarySearch{
         public static int searchElement(int[] arr,int n){
