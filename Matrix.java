@@ -41,7 +41,11 @@ class Matrix{
         // System.out.println("The m nin um is:" +res);
 
     //spiral matrix
-        mat.spiralMatrix(matrix);    
+        // mat.spiralMatrix(matrix);   
+
+    //diagonal Sum of matrix
+        int res =  mat.diagonalSum(matrix);   
+        System.out.println("The result is:" +res);    
 
     }
 }    

@@ -63,14 +63,16 @@ public class MatrixOperation{
             }
             //bottom
             for(int col=endCol-1; col>=startCol;col--){
-                if(startRow == endRow)
+                if(startRow == endRow){
                     break;
+                }    
                  System.out.print(arr[endRow][col] + " ");
             }
             //left
-            for(int row=endRow-1; row>=startRow+1    ;row--){
-                if(startCol == endCol)
+            for(int row=endRow-1; row>=startRow+1;row--){
+                if(startCol == endCol){
                     break;
+                }    
                  System.out.print(arr[row][startCol] + " ");
             }
 
@@ -82,5 +84,21 @@ public class MatrixOperation{
         }
         System.out.println(" ");
 
+    }
+
+    public static int diagonalSum(int[][] arr){
+        int n = arr.length;
+        int sum = 0;
+        for(int i =0; i<n; i++){
+            for(int j=0; j<arr[0].length; j++){
+                if(i==j){
+                    sum += arr[i][j];
+                }
+                else if(i+j == n-1){
+                    sum += arr[i][j];
+                }
+            }
+        }
+        return sum;
     }
 }
