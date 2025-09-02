@@ -44,8 +44,13 @@ class Matrix{
         // mat.spiralMatrix(matrix);   
 
     //diagonal Sum of matrix
-        int res =  mat.diagonalSum(matrix);   
-        System.out.println("The result is:" +res);    
+        // int res =  mat.diagonalSum(matrix);   
+        // System.out.println("The result is:" +res);   
+
+    //staircase search
+        System.out.println("Enter your key element that you want to search: "); 
+        int key = sc.nextInt();
+        mat.stairCaseSearch(matrix,key);       
 
     }
 }    

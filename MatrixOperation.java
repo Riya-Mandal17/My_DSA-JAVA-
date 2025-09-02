@@ -113,4 +113,24 @@ public class MatrixOperation{
         }  
         return sum;
     }
+
+    public static void stairCaseSearch(int[][] arr, int key){
+       int n = arr.length;
+       int row = 0;
+       int col = n - 1;  // start at top-right corner
+
+        while (row < n && col >= 0) {
+            if (arr[row][col] == key) {
+                System.out.println("Key found at index: " + row + "," + col);
+                break;
+            }
+            else if (key < arr[row][col]) {
+                col--; // move left
+            }
+            else {
+                row++; // move down
+            }
+        }
+ 
+    }
 }
