@@ -131,6 +131,51 @@ public class MatrixOperation{
                 row++; // move down
             }
         }
- 
+
+    }
+
+    public static int countKeyNum(int[][] arr, int key){
+        int count = 0;
+
+        for(int i=0; i<arr.length;i++){
+            for(int j=0; j<arr[0].length;j++){
+                if(arr[i][j] == key){
+                    count++;
+                    return count;
+                }
+            }
+        }
+        System.out.println("key is not present!!");
+        return count;
+    }
+
+    public static int sumRow(int[][] arr, int row){
+        int sum = 0;
+
+        for(int i=0; i<arr[0].length; i++){
+            sum += arr[row -1][i];
+        }
+
+        return sum;
+    }
+
+    public static void transposeMatrix(int[][] arr){
+        int row = arr.length;
+        int col = arr[0].length;
+        int[][] trans = new int[col][row];
+
+        for(int i =0; i< row; i++){
+            for(int j=0; j < col; j++){
+               trans[j][i]  =  arr[i][j];
+            }
+        }
+
+        //print
+        for(int i =0; i<trans.length; i++){
+            for(int j=0; j<trans[0].length ; j++){
+                System.out.print(trans[i][j] +" ");
+            }
+            System.out.println();
+        }
     }
 }

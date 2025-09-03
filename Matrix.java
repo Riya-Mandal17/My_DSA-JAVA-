@@ -48,9 +48,23 @@ class Matrix{
         // System.out.println("The result is:" +res);   
 
     //staircase search
-        System.out.println("Enter your key element that you want to search: "); 
-        int key = sc.nextInt();
-        mat.stairCaseSearch(matrix,key);       
+        // System.out.println("Enter your key element that you want to search: "); 
+        // int key = sc.nextInt();
+        // mat.stairCaseSearch(matrix,key);   
 
+    //count the number of key present in the matrix  
+        // System.out.println("Enter your key element that you want to count: "); 
+        // int key = sc.nextInt();
+        // int res = mat.countKeyNum(matrix,key); 
+        // System.out.println("The number of key element present in matrix is: " +res);
+
+    //row sum
+        // System.out.println("Enter your row that you want to sum: "); 
+        // int key = sc.nextInt();
+        // int res = mat.sumRow(matrix,key); 
+        // System.out.println("The sum of row element present in your desire row is: " +res);
+
+    //transpose matrix
+        mat.transposeMatrix(matrix);
     }
 }    
